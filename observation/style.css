@@ -1,0 +1,94 @@
+body {
+ background-color: white;
+ overflow:hidden;
+font-family: prestige-elite-std, monospace;
+font-weight: 400;
+font-style: normal;
+}
+
+p{
+	font-size: 12px;
+	color:white;
+
+}
+
+.description{
+	position:absolute;
+	top:100px;
+	right:55px;
+	width:300px;
+	z-index:1;
+
+}
+
+#lead{
+font-family: neue-haas-grotesk-display, sans-serif;
+
+font-weight: 600;
+
+font-style: normal;
+	font-size:16px;
+	font-height:14px;
+	color:white;
+}
+
+.text{
+	position:absolute;
+	top:450px;
+	right:55px;
+	width:300px;
+}
+
+.envelope { 
+position:relative;
+width:100%; 
+height:100%; 
+ }
+
+.exit{ 
+text-align: right;
+color:white; }
+
+#headphones{
+	z-index:-1;
+	position: fixed;
+	transform: rotate(10deg);
+	top:10px;
+}
+
+.plus{
+	background:yellow;
+	mix-blend-mode: multiply;
+	border-radius: 50%;
+	height: 50px;
+  	width: 50px;
+  	z-index: 1;
+  	position: absolute;
+  	left:355px;
+  	top:44px;
+}
+
+
+.center{
+	background:yellow;
+	mix-blend-mode: multiply;
+	border-radius: 50%;
+	height: 50px;
+  	width: 50px;
+  	z-index: 1;
+  	position: absolute;
+  	top:70px;
+  	left:300px;
+}
+
+.minus{
+	background:yellow;
+	mix-blend-mode: multiply;
+	border-radius: 50%;
+	height: 50px;
+  	width: 50px;
+  	z-index: 1;
+  	position: absolute;
+  	top:100px;
+  	left:250px;
+}
