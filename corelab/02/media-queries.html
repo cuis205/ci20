@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media queries for mobile layout</title>
+	<style type="text/css">
+		
+		html,body{
+			height:100%;
+			margin:0px;
+		
+		}
+
+		body{
+			display:flex;
+			flex-direction:row;
+		}
+
+		div{
+			flex:1;
+		}
+
+		div:nth-of-type(even) {
+			background-color: cornsilk;
+		}
+		div:nth-of-type(odd) {
+			background-color: midnightblue;
+		}
+@media(max-width: 1000px){
+	
+}
+		@media(max-width:700px){
+/*more css goes here -- if the above statement is true, then it will apply these styles
+"initial" undos any applied styles */
+
+body{
+	flex-direction:column;
+}
+		}
+
+		@media(hover:none){
+div:nth-of-type(even) {
+			background-color: slateblue;
+		}
+
+	}
+	</style>
+
+
+</head>
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+</body>
+</html>
