@@ -1,0 +1,59 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{ 
+margin:0px;
+padding:0px; 
+
+ overflow-x: scroll;
+    width: auto;
+    white-space: nowrap;
+}
+
+
+.container{
+	display:flex;
+	flex-direction:row;
+	align-items: row;
+
+}
+
+.one{
+	height:1080px;
+	width:100vw;
+
+	display:inline-block;
+	background-color:red;
+}
+
+.two{
+	background-color:blue;
+	height:1080px;
+	width:100vw;
+	display:inline-block;
+}
+
+.three{
+	background-color:cornflowerblue;
+	height:1080px;
+	width:100vw;
+	display:block;
+	float:left;
+}
+
+.four{
+	background-color:sienna;
+	height:1080px;
+	width:100vw;
+	float:right;
+	display:inline-block;
+	white-space: wrap;
+}
+
+
+.five{
+	background-color:sienna;
+	height:1080px;
+	width:100vw;
+}
