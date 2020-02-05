@@ -4,56 +4,131 @@ html{
 
 body{ 
 margin:0px;
-padding:0px; 
+padding:0px;
+overflow-x: scroll;
+width: auto;
+white-space: nowrap; 
 
- overflow-x: scroll;
-    width: auto;
-    white-space: nowrap;
 }
 
+h1{
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color:black;
+	font-size: 30pt;
+	line-height: 30pt;
+
+	margin:0px;
+	padding:10px;
+}
 
 .container{
-	display:flex;
-	flex-direction:row;
-	align-items: row;
+	position:relative;
+}
+.row1{
+width:100%;
+height:100%;
+display:block;
 
 }
 
-.one{
+.row2{
+width:100%;
+height:100%;
+display:block;
+
+}
+.playmusic{
+	position:relative;
+
+	width:400px;
+	left:20%;
+	top:25%;
+
+	text-align:center;
+
+	border:solid black 5px;
+	border-radius: 25px;
+}
+
+.bordercontrols{
+	text-align:center;
+	background-color:transparent;
+	border:solid black 5px;
+	border-radius: 25px;
+}
+
+.baseblocks{
 	height:1080px;
 	width:100vw;
 
 	display:inline-block;
 	background-color:red;
+
 }
 
-.two{
-	background-color:blue;
-	height:1080px;
-	width:100vw;
-	display:inline-block;
+.flexrow{
+	display:flex;
+	/*we are now in flexbox*/
+	/*WHAT ARE THE RULES. WHAT ARE THE RULLEESS */
+	flex-direction:row;
+	align-items:center;
 }
 
-.three{
-	background-color:cornflowerblue;
-	height:1080px;
-	width:100vw;
-	display:block;
-	float:left;
+.flexcol{
+	display:flex;
+	/*we are now in flexbox*/
+	/*WHAT ARE THE RULES. WHAT ARE THE RULLEESS */
+	flex-direction:column;
+	align-content: center;
 }
 
-.four{
+.centerhub{
+	width:100%;
+	height:100%;
+}
+
+.otherhubcntrl{
+	position:relative;
+	left:30%;
+
+}
+
+.hub{
+	height:75%;
+	width:100%;
+}
+.texthub{
+	position:relative;
+	top:50%;
+	left:25%;
+	width:600px;
+
+}
+
+.open{
+	position:relative;
+	width:650px;
+	left:20%;
+	top:25%;
+}
+
+.start{
+	position:relative;
+	width:700px;
+	left:20%;
+	top:25%;
+}
+
+
+/*.four{
 	background-color:sienna;
 	height:1080px;
 	width:100vw;
 	float:right;
 	display:inline-block;
-	white-space: wrap;
-}
 
-
-.five{
-	background-color:sienna;
-	height:1080px;
-	width:100vw;
 }
+*/
+
