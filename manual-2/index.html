@@ -1,102 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Manual-2</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Manual-2</title>
 
-	<link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset='utf-8'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-	<link rel="stylesheet" href="https://use.typekit.net/nyr8fvf.css">
+    <meta charset='utf-8'>
 
-	<link rel="stylesheet" href="https://use.typekit.net/nyr8fvf.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nyr8fvf.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nyr8fvf.css">
 
-	<script src="myscript.js" type="text/javascript"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-</head>
-<body>
-<div class="container">
-<div class="row1"> 
+    <script src="myscript.js" type="text/javascript"></script>
 
-<!-- STEP ONE -->
-<div class = "baseblocks">
-		<div class ="playmusic">
-			<h1>Play  Music?</h1>
-		</div>
-</div>
+  </head>
 
-<!-- OPEN STREAMING SERVICE -->
-<div class ="baseblocks">
-<div class ="open bordercontrols">
-	<h1>Open streaming service of choice</h1>
-</div>
-</div>
+  <body>
+    <div class="container">
+      <div class="row1">
 
+        <!-- STEP ONE -->
+        <div class="baseblocks">
+          <div class="playmusic">
+            <a href="#open">
+              <h1>Play Music?</h1>
+            </a>
+          </div>
+        </div>
 
-<!-- VOLUME THIS SHOULD BE A FLEX BOX****-->
-<div class="baseblocks"><div class ="start bordercontrols">
-	<h1>Press the center button to play music </h1>
-</div>
-</div>
-<!-- VOLUME -->
+        <!-- <svg id="svg">
+  <line id="line"/>
+</svg> -->
 
-
-</div>
-
-<!-- SECOND DIV ROW  -->
-
-<div class="row2">
+        <!-- OPEN STREAMING SERVICE -->
+        <div class="baseblocks" id="open">
+          <div class="open bordercontrols">
+            <a href="#play">
+              <h1>Open streaming service of choice</h1>
+            </a>
+          </div>
+        </div>
 
 
-<!-- PAUSE CONTROL -->
-<div class ="baseblocks">
-	<div class ="pause bordercontrols">
-		<h1>If you want to pause the music, press the center button again</h1>
-	</div>
-</div>
-<!-- PAUSE CONTROL -->
+        <!-- VOLUME THIS SHOULD BE A FLEX BOX****-->
+        <div class="baseblocks" id="volume">
+          <div class="flexcol full">
+            <div class="volup bordercontrols marg"><a href="#back">
+                <h1>To increase volume, press the plus (+) button
+                </h1>
+              </a>
+            </div>
 
-<!-- CENTER BUTTON HUB -- this should be a flex box ***********  -->
-<div class ="baseblocks">
-	<div class="centerhub flexcol">
-
-	<div class="hub">
-
-	<div class ="texthub bordercontrols">
-		<h1>Press the center button<br> to begin to play music </h1></div>
-
-	</div>
-
-
-	<div class="otherhubcntrl flexrow">
-		<div class="voldown bordercontrols"><h1>VOLUME </h1></div>
-
-		<div class="volup bordercontrols"><h1>VOLUME </h1></div>
-	</div>
+            <a href="#back">
+              <div class="volup bordercontrols marg">
+                <h1>To decrease volume, press the minus (-) button
+                </h1>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- VOLUME -->
 
 
-	
-	</div>
-</div>
-<!-- CENTER BUTTON HUB  -->
+      </div>
+
+      <!-- SECOND DIV ROW  -->
+
+      <div class="row2">
 
 
-<!-- MESS MESS MESS -->
-<div class ="baseblocks">
-	<div class ="mess bordercontrols">
-		<h1>MESS</h1>
-	</div>
-</div>
-<!-- MESS MESS MESS -->
+        <!-- PAUSE CONTROL -->
+        <div class="baseblocks">
+          <a href="#back">
+            <div class="finetune" id="pause">
+              <div class="pause bordercontrols">
+                <h1>Press the center button to pause music</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- PAUSE CONTROL -->
 
-</div>
-</div>
+        <!-- CENTER BUTTON HUB -- this should be a flex box ***********  -->
+        <div class="baseblocks">
+          <div class="centerhub flexcol">
 
-</div>
+            <div class="hub">
 
-</body>
+
+              <div class=" volume bordercontrols"><a href="#volume">
+                  <h1>Volume(+/-)</h1>
+                </a></div>
+
+
+              <div class="texthub bordercontrols" id="play">
+                <h1>Press the center button<br> to begin to play music </h1>
+              </div>
+
+            </div>
+
+
+            <div class="otherhubcntrl flexrow" id="back">
+              <div class="fifty">
+                <a href="#pause">
+                  <div class="pausebutt bordercontrols">
+                    <h1>Pause </h1>
+                  </div>
+                </a>
+              </div>
+
+              <div class="fifty">
+                <a href="#mess">
+                  <div class="skiptracking bordercontrols">
+                    <h1>Skip/Tracking </h1>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <!-- CENTER BUTTON HUB  -->
+
+
+        <!-- MESS MESS MESS -->
+        <div class="baseblocks">
+          <div class="mess bordercontrols" id="mess">
+            <h1>If you want to skip the song, double click the center button</h1>
+          </div></div>
+
+          <div class="mess2 bordercontrols">
+            <h1>To fast forward in a song, long hold the center button
+            </h1>
+          </div>
+
+          <div class="mess3 bordercontrols">
+            <h1>
+              UH OH UH OH UH OH UH OH
+            </h1>
+          </div>
+
+          <div class="mess4 bordercontrols">
+            <h1>
+              Press and hold the minus button the lower the volume faster</h1>
+          </div>
+
+          <div class="mess5 bordercontrols">
+            <h1>
+              UH OH UH OH UH OH</h1>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <!-- MESS MESS MESS -->
+
+
+
+  </body>
+
 </html>

@@ -1,16 +1,14 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-line1 = $('#line1');   
-div1 = $('.playmusic');   
-div2 = $('.div2');
+// var line = $('#line');
+// var div1 = $('.playmusic');
+// var div2 = $('.open');
 
-var pos1 = div1.position();
-var pos2 = div2.position();
+// var x1 = div1.offset().left + (div1.width()/2);
+// var y1 = div1.offset().top + (div1.height()/2);
+// var x2 = div2.offset().left + (div2.width()/2);
+// var y2 = div2.offset().top + (div2.height()/2);
 
-line1
-  .attr('x1', pos1.left)
-  .attr('y1', pos1.top)
-  .attr('x2', pos2.left)
-  .attr('y2', pos2.top);
+// line.attr('x1',x1).attr('y1',y1).attr('x2',x2).attr('y2',y2);
 
-});
+//       }); 
