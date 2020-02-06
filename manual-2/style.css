@@ -218,30 +218,133 @@ display:block;
 	top:85%;
 }
 
-
-/*#svg{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+.fifty{
+	width:70%;
 }
 
-#line{
-  stroke-width:2px;
-  stroke:rgb(0,0,0);
-}*/
+.mq{display:none;}
+.mobflex , .mobcontain{display:none;}
+#line3 , #line4 , #line5 , #line6 , #line7{display:none;}
+
+/*MEDIA QUERIES KINDA... WANNA DIE>??? LOWKEY??? it really be your own self to betray yourself hahah */
 
 
+@media(hover:none){
 
-/*.four{
-	background-color:sienna;
-	height:1080px;
-	width:100vw;
+.row1 , .mess7 , .mess8 , .mess9{display:none;}
+.row2{display:none;}
+.mobflex{
+	display:flex;
+	flex-direction: column;
+
+	align-content: center;
+	overflow-y: auto;
+}
+
+.momcontain{
+	display:all;
+}
+
+#line3 {
+    font-size:0;
+    display:inline;
+    width:4px;
+    height:75px;
+    color:#fff;
+    background-color:#000;
+    margin-left:78px;
+    float:left;
+ }  
+
+#line4 {
+    font-size:0;
+    display:inline;
+    width:4px;
+    height:140px;
+    color:#fff;
+    background-color:#000;
+    position:relative;
+    left:70%;
+ }  
+
+#line5 {
+    font-size:0;
+    display:inline;
+    width:4px;
+    height:140px;
+    color:#fff;
+    background-color:#000;
+    position:relative;
+    left:40%;
+ }  
+
+ #line6 {
+    font-size:0;
+    display:inline;
+    width:4px;
+    height:425px;
+    color:#fff;
+    background-color:#000;
+    position:absolute;
+    left:88%;
+    top:46%;
+ }  
+
+ #line7 {
+    font-size:0;
+    display:inline;
+    width:4px;
+    height:33px;
+    color:#fff;
+    background-color:#000;
+    position:relative;
+    left:20%;
+ }  
+
+ #line8 {
+    font-size:0;
+    display:inline;
+    width:4px;
+    height:420px;
+    color:#fff;
+    background-color:#000;
+    position:relative;
+    left:50%;
+ }  
+.right{
 	float:right;
-	display:inline-block;
+}
+.mq{
+	display:block;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color:black;
+	font-size: 20pt;
+	line-height: 20pt;
+
+	margin:20px;
+	padding:10px;
+
+	text-align:center;
+	background-color:transparent;
+	border:solid black 5px;
+	border-radius:25px;
+}
+.nopadding{
+	padding:0px;
+	margin:0px;
+}
+.mess1{
+	transform:rotate(-10deg);
+}
+.mess7{
 
 }
-*/
-
+.mess8{
+	transform:rotate(10deg);
+}
+.mess9{
+	transform: rotate(-2deg);
+}
+}
