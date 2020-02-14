@@ -134,6 +134,10 @@ h1{
 
 .container{
 	position:relative;
+
+	display: flex;
+	flex-direction: row;
+
 }
 
 .row1{

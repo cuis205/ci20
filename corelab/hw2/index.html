@@ -101,6 +101,78 @@
 
 		}
 
+		@media(max-width:700px)
+		{
+			body{
+				animation: colorchange 50s;
+			}
+
+			 @keyframes colorchange
+   				 {
+     		 0%   {background: red;}
+     		 25%  {background: yellow;}
+     		 50%  {background: blue;}
+     		 75%  {background: green;}
+     		 100% {background: red;}
+    		}
+
+			.header, .other, h1, .left, .descrip, h2, .item{
+				mix-blend-mode: exclusion;
+				color:white;
+			}
+
+		.header{
+				width:100%;
+			}
+		.container{
+			padding:20px;
+			}
+
+		.left{
+			border-right: dashed white 2px;
+			
+		}
+
+		h2{
+			text-decoration: underline;
+			text-decoration-style: wavy;
+			text-underline-position:auto;
+		}
+	}
+
+		@media(hover:none){
+			div{
+				display:block;
+			}
+
+			.container{
+				display:block;
+			}
+
+			.left, .right{
+				width:100%;
+				border-right:none;
+
+			}
+
+			.right{
+				
+				margin-top:20px;
+				border-top:dashed #fb91c9 2px;
+				padding:0px;
+				padding-top:20px;
+			}
+			.headline{
+				display:block;
+			}
+
+			.header{
+				width:100%;
+				text-align: left;
+			}
+
+	}
+
 
 	</style>
 </head>
