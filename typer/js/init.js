@@ -3,6 +3,9 @@ var word = "";
 var synth;
 
 
+
+
+
  window.onload = function() {
   var context = new AudioContext();
  synth = new Tone.Synth({
@@ -231,6 +234,10 @@ if (bass.indexOf(e.key)!== -1){
     'z-index':'-1',
   });
 
+
+var filt = Math.floor(Math.random() * (100-35)+35);
+console.log('this' + filt);
+
   $('.new:last').css({
     'background-color':color,
     'top': posy + '%',
@@ -241,6 +248,7 @@ if (bass.indexOf(e.key)!== -1){
     'margin-top': "-" + divsize / 2,
     'mix-blend-mode': 'overlay',
     '-webkit-animation': 'fadein 1s',
+    'filter': `blur(${filt}px)`,
   })
 
 
