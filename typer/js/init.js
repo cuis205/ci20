@@ -244,10 +244,6 @@ if (bass.indexOf(e.key)!== -1){
   })
 
 
-
-
-
-
 // $('#'+ num).load('url', function(){
 //     $('#'+num).trigger('foohappened')
 // });
