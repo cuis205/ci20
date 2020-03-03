@@ -192,11 +192,12 @@ if (bass.indexOf(e.key)!== -1){
 
   if (e.keyCode == 8) {
     deleteElement();
+
   }
 
   if (e.keyCode == 13) {
     createLetter("<br>");
-   
+   $('body').removeClass('new:last');
   }
 
  
@@ -239,6 +240,7 @@ if (bass.indexOf(e.key)!== -1){
     'margin-left': "-" + divsize / 2,
     'margin-top': "-" + divsize / 2,
     'mix-blend-mode': 'overlay',
+    '-webkit-animation': 'fadein 1s',
   })
 
 
