@@ -131,7 +131,6 @@ var conssix = ['l','m','n']
 var seven = ['v','c','p']
 var bass = ['j','b']
 
-
 //chords
 
 // var synth = new Tone.PolySynth(6, Tone.Synth).toMaster();
