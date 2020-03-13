@@ -11,3 +11,4 @@ my name is REDACTED and welcome to MTV cribs
 - [studio hw2:"manual-1"](https://cuis205.github.io/ci20/manual-1/index.html)
 - [lab: hw2 "Lobster"](https://cuis205.github.io/ci20/corelab/hw2/index.html)
 - [studio: hw2 "typer"](https://cuis205.github.io/ci20/typer/index.html)
+- [lab: hw23 "brainworms:)"](https://cuis205.github.io/ci20/corelab/hw3/index.html)
