@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<title>dom level 1</title>
+
+<body>
+	<nav> </nav>
+	<h1 id="title" class="headers"> The history of 80s Romcoms </h1>
+</body>
+
+<script type="text/javascript">
+
+	//so no head? 
+//three ways of doing similar things 
+//1. 
+
+	var header = document.getElementById("title");
+	console.log(header);
+	header.style.color = "red";
+
+//2. 
+	document.querySelector('#title').style.color = "green";
+
+//3. 
+	var headers = document.querySelectorAll(".headers");
+	console.log(headers);
+	headers[0].style.color = "purple";
+	//it makes an array 
+
+//part two: creating elements 
+
+//STEP 1: Create element 
+var h1 = document.createElement("h1");
+//STEP 2:  STYLE IT 
+h1.innerHTML = "The History of 90s Romcoms";
+console.log(h1);
+//STEP 3: STEP IT UP ... append it to the page 
+document.body.appendChild(h1);
+
+
+var text = document.createElement("p");
+text.innerHTML = "hello"; 
+document.querySelector("nav").appendChild(text);
+</script>
+

@@ -1,0 +1,31 @@
+body{
+	display:flex; 
+	flex-direction:row;
+
+font-family: europa, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+padding:0px;
+margin:0px;
+
+}
+
+.sidebar {flex:0 0 150px;
+/*background-color: green;*/
+padding:20px;
+height:100vh;}
+.content{flex:1;}
+
+a{
+	color:white;
+	mix-blend-mode: difference;
+}
+
+
+.content{ 
+padding:20px;
+padding-left:30px;
+height:100vh;
+/*color:white;*/
+}

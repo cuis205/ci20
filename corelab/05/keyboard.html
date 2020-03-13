@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<title>keyboop</title>
+
+<body><p id="text"></p>
+</body>
+
+<script type="text/javascript">
+	
+	document.onkeypress = function(event){
+		console.log("key press",event.key);
+		document.querySelector("#text").innerHTML = document.querySelector("#text").innerHTML + event.key;
+	};
+
+	document.onkeydown = function(event) {
+		console.log("key down", event.key);
+	};
+
+	document.onkeyup = function(event) {
+		console.log("key up", event.key);
+	};
+	//a lot of the meta keys do not work 
+
+//keycodes is another key inside of event, where everyhting has a number 
+
+
+
+</script>
