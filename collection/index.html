@@ -9,11 +9,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script>
-		var films;
-		var data;
-		fetch("data.json")
+		var DATA; 
+
+	fetch("data.json")
 	.then(function(blob){ return blob.json(); })
-	.then(function(json){ buildPage(json);
+	.then(function(json){ 
+		DATA = json;
+		buildPage(json);
 
 	 });
 
@@ -27,41 +29,41 @@
 
 
 <div class="colour" id="filter" >Colour</div>
-<div class="year" id="filter" onclick="year()">Year</div>
-<div class="gender" id="filter" onclick="gender()">Gender</div>
+<div class="year" id="filter" onclick="year();" >Year</div>
+<div class="gender" id="filter" onclick="gen();">Gender</div>
 <div class="auteurship" id="filter" onclick="aute();">Auteurship</div>
 
 </div>
 
 	<div class="container" >
-<div class="row1" id="row">
+<div class="row" id="row1">
 </div>
 
-<div class="row2" id="row">
+<div class="row" id="row2">
 </div>
 
-<div class="row3" id="row">
+<div class="row" id="row3">
 </div>
 
-<div class="row4" id="row">
+<div class="row" id="row4">
 </div>
 
-<div class="row5" id="row">
+<div class="row" id="row5">
 </div>
 
-<div class="row6" id="row">
+<div class="row" id="row6">
 </div>
 
-<div class="row7" id="row">
+<div class="row" id="row7">
 </div>
 
-<div class="row8" id="row">
+<div class="row" id="row8">
 </div>
 
-<div class="row9" id="row">
+<div class="row" id="row9">
 </div>
 
-<div class="row10" id="row">
+<div class="row" id="row10">
 </div>
 
 </div>
