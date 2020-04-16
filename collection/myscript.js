@@ -8,7 +8,7 @@ var films;
 
 function buildPage(data){
 films = DATA;
-
+console.log(DATA);
 
 ///******** years 
 
@@ -57,6 +57,16 @@ films = DATA;
     	row = document.querySelector('#row9');
     } else if (i<100){
     	row = document.querySelector('#row10');
+    } else if (i<110){
+    	row = document.querySelector('#row11');
+    }else if (i<120){
+    	row = document.querySelector('#row12');
+    }else if (i<130){
+    	row = document.querySelector('#row13');
+    }else if (i<140){
+    	row = document.querySelector('#row14');
+    }else if (i<150){
+    	row = document.querySelector('#row15');
     }
 
 
@@ -121,6 +131,27 @@ $('.row').empty();
 
 buildPage(gen);
 };
+
+//Colour
+function col(BuildPage){
+$('.row').empty();
+	DATA.sort(function(a, b) {
+  var colourA = a.Colour.toUpperCase(); // ignore upper and lowercase
+  var colourB = b.Colour.toUpperCase(); // ignore upper and lowercase
+  if (colourA < colourB) {
+    return -1;
+  }
+  if (colourA > colourB) {
+    return 1;
+  }
+
+  // names must be equal
+  return 0;
+});
+
+buildPage(col);
+};
+
 
 
 
