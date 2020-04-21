@@ -78,11 +78,17 @@ window.onclick = function (e) {
     var x = e.pageX,
         y = e.pageY;
 
-        $('#infopop').css({
-	'left': e.pageX + 250,
-	'top': e.pageY +150,});
-};
+ //        $('#infopop').css({
+	// 'left': e.pageX + 250,
+	// 'top': e.pageY +150,});
 
+
+        $('#infopop').position({   
+
+   my: "left+3 top-1",
+                  of: e,
+                  collision: "flipfit" });
+};
 
 $('#infopop').fadeIn(350);
 
