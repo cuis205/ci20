@@ -1,42 +1,21 @@
+
+
 var years;
 var auteurship;
 var gender; 
 var films;
-
-//// *******build page
-// var ordering;
+var title;
 
 function buildPage(data){
 films = DATA;
-console.log(DATA);
-
-///******** years 
-
-// var years = films.sort(function (a, b) {
-//   return a.Year - b.Year;
-// });
-
-// console.log(years);
-
-//********* auteurship 
-	// var auteurship = films.sort(function (a, b) {
- //  	return b.auteurship - a.auteurship;
- //  });
-
-// // // **************gender 
-
-
-// **************color
-
-
-////// this is tile style
-// function buildCells(){
 
   var row;
 
   // this for-loop operates on each movie, and builds a block for it
-  for (var i=0; i<films.length; i++){
- 
+  // for (var i=0; i<films.length; i++){
+  //function scope 
+ Array.from(films).forEach((film,i) => {
+
     if (i<10){
       row = document.querySelector('#row1');
     } else if (i<20){
@@ -77,14 +56,77 @@ console.log(DATA);
     
     // el.innerHTML=tiles.Film;
     el.setAttribute("class","sizing");
+    el.setAttribute("id","filminfo");
     //adds the element to the row
     row.appendChild(el);
 
-  }
-
-}
 
 
+	el.addEventListener("click",function(){popUp(film)});
+
+
+  }); 
+};
+
+
+
+
+function popUp(film){
+
+
+window.onclick = function (e) {
+    var x = e.pageX,
+        y = e.pageY;
+
+        $('#infopop').css({
+	'left': e.pageX + 250,
+	'top': e.pageY +150,});
+};
+
+
+$('#infopop').fadeIn(350);
+
+
+   filmname = film.Film;
+   directorname = film.Director;
+   filmyear = film.Year;
+   filmcol = film.Colour;
+   filmgenre = film.Genre;
+   filmdes = film.Description;
+   filmwrite = film.Writer;
+   gender = film.DirGen;
+   auterat = film.auteurship;
+
+
+ 
+   movieinfo = document.querySelector('#movieinfo');
+   infopop = document.querySelector('#infopop');
+
+   movieinfo.innerHTML = 
+   '<strong>' + filmname + '</strong>' +  ' ' + '(' + filmyear + ')' 
+   + '</br>' + '<strong>' +
+   'Dir.:' + '</strong>' + directorname  +  '</br>' +
+   '<strong>'+ 'Writer(s):'+'</strong>'+ filmwrite + '</br>' +
+    '<strong>' + 'Palette:' + '</strong>' + filmcol 
+   +  '</br>' +  '</br>' + filmdes 
+
+   +  '</br>' +  '</br>' +  '<strong>'+ 'Genre(s):' + '</strong>' + filmgenre
+   + '</br>' + '<strong>' + 'Director(s) Gender:' + '</strong>' + gender 
+   + '</br>' + '<strong>' + 'Auteurship:' + '</strong>' + auterat 
+   ;
+
+};
+
+window.onload = function(){
+var btn = document.getElementById('close-button');
+
+ btn.onclick = function(event) {
+  $('#infopop').css("display","none");
+};
+
+};
+
+// +  '</br>' +
 //AUTE SHIP
 
 function aute(BuildPage){
@@ -98,7 +140,6 @@ buildPage(aute);
 //modify data by any combination of filtering and sorting 
 // var newdata = DATA.sort
 // call buildpage and pass in newdata as the argument 
-
 };
 
 
@@ -152,24 +193,17 @@ $('.row').empty();
 buildPage(col);
 };
 
-
-
-
-
-
 // 
 // };
 
+//create another div per movie w/ information 
+//absolute position & z-index
+//have those divs hidden by default 
+//then on event the divs will be shown
 
 
-// el.onclick=popUp(i);
+  // $( '.row' ).on( 'click', 'div', function popUp(film) { 
+  // 	filmname = film.Film;
+  //    console.log(filmname);
+  // });
 
-
-// function popUp(){
-//   if (ordering=='year'){
-//     array=year;
-//   }
-//   title=array[i].film;
-//   director=array[i].directory;
-
-// }
