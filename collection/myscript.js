@@ -86,8 +86,8 @@ window.onclick = function (e) {
         $('#infopop').position({   
 
    my: "left+3 top-1",
-                  of: e,
-                  collision: "flipfit" });
+    of: e,
+    collision: "flipfit" });
 };
 
 $('#infopop').fadeIn(350);
@@ -137,6 +137,8 @@ var btn = document.getElementById('close-button');
 
 function aute(BuildPage){
 $('.row').empty();
+ $('#infopop').css("display","none");
+
 	var auteurship = DATA.sort(function (a, b) {
   	return b.auteurship - a.auteurship;
 
@@ -152,6 +154,7 @@ buildPage(aute);
 ///YEAR
 function year(BuildPage){
 $('.row').empty();
+ $('#infopop').css("display","none");
 	var years = DATA.sort(function (a, b) {
   return a.Year - b.Year;
 });
@@ -162,6 +165,7 @@ buildPage(year);
 ///GENDER
 function gen(BuildPage){
 $('.row').empty();
+ $('#infopop').css("display","none");
 	DATA.sort(function(a, b) {
   var DirGenA = a.DirGen.toUpperCase(); // ignore upper and lowercase
   var DirGenB = b.DirGen.toUpperCase(); // ignore upper and lowercase
@@ -182,6 +186,7 @@ buildPage(gen);
 //Colour
 function col(BuildPage){
 $('.row').empty();
+ $('#infopop').css("display","none");
 	DATA.sort(function(a, b) {
   var colourA = a.Colour.toUpperCase(); // ignore upper and lowercase
   var colourB = b.Colour.toUpperCase(); // ignore upper and lowercase
