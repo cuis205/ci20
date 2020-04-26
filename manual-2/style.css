@@ -1,5 +1,5 @@
 html{
-	scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{ 
@@ -12,19 +12,19 @@ white-space:nowrap;
 }
 
 h1{
-	font-family: neue-haas-grotesk-display, sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	color:black;
-	font-size: 30pt;
-	line-height: 30pt;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:black;
+    font-size: 30pt;
+    line-height: 30pt;
 
-	margin:0px;
-	padding:10px;
+    margin:0px;
+    padding:10px;
 }
 /*A BOLD ATTEMPT AT THINGS*/
 .presets{
-	color:#fff;
+    color:#fff;
     background-color:#000;    
     margin:auto;
     z-index:1;
@@ -96,7 +96,7 @@ h1{
     top:16.5%;
  } 
 .volumeline{
-	display:inline;
+    display:inline;
     width:5px;
     height:97px;
     color:#fff;
@@ -112,7 +112,7 @@ h1{
  } 
 
 .pauseline{
-	display:inline;
+    display:inline;
     width:5px;
     height:188px;
     color:#fff;
@@ -122,7 +122,7 @@ h1{
 }
 
 .skipline{
-	display:inline;
+    display:inline;
     width:5px;
     height:188px;
     color:#fff;
@@ -133,11 +133,7 @@ h1{
 /*END OF A BOLD ATTEMPT*/
 
 .container{
-	position:relative;
-
-	display: flex;
-	flex-direction: row;
-
+    position:relative;
 }
 
 .row1{
@@ -154,184 +150,184 @@ display:block;
 
 }
 .playmusic{
-	position:relative;
+    position:relative;
 
-	width:400px;
-	left:30%;
-	top:25%;
+    width:400px;
+    left:30%;
+    top:25%;
 
-	text-align:center;
-	background-color:white;
-	border:solid black 5px;
-	border-radius:25px;
+    text-align:center;
+    background-color:white;
+    border:solid black 5px;
+    border-radius:25px;
 }
 
 .bordercontrols{
-	text-align:center;
-	background-color:transparent;
-	border:solid black 5px;
-	border-radius:25px;
+    text-align:center;
+    background-color:transparent;
+    border:solid black 5px;
+    border-radius:25px;
 }
 
 .baseblocks{
-	height:1080px;
-	width:100vw;
+    height:1080px;
+    width:100vw;
 
-	display:inline-block;
-	background-color:white;
+    display:inline-block;
+    background-color:white;
 
 }
 
 .flexrow{
-	display:flex;
-	/*we are now in flexbox*/
-	/*WHAT ARE THE RULES. WHAT ARE THE RULLEESS */
-	flex-direction:row;
-	align-items:center;
+    display:flex;
+    /*we are now in flexbox*/
+    /*WHAT ARE THE RULES. WHAT ARE THE RULLEESS */
+    flex-direction:row;
+    align-items:center;
 }
 
 .flexcol{
-	display:flex;
-	/*we are now in flexbox*/
-	/*WHAT ARE THE RULES. WHAT ARE THE RULLEESS */
-	flex-direction:column;
-	align-content:center;
+    display:flex;
+    /*we are now in flexbox*/
+    /*WHAT ARE THE RULES. WHAT ARE THE RULLEESS */
+    flex-direction:column;
+    align-content:center;
 }
 
 .centerhub{
-	width:100%;
-	height:100%;
+    width:100%;
+    height:100%;
 }
 
 .otherhubcntrl{
-	position:relative;
-	width:100%;
-	height:15%;
-	align-content: center;
+    position:relative;
+    width:100%;
+    height:15%;
+    align-content: center;
 }
 
 .hub{
-	height:85%;
-	width:100%;
+    height:85%;
+    width:100%;
 }
 .texthub{
-	position:relative;
-	top:60%;
-	left:30%;
-	width:600px;
+    position:relative;
+    top:60%;
+    left:30%;
+    width:600px;
 
 }
 
 .pause{
-	position:relative;
-	width:700px;
-	left:25%;
-	top:60%;
+    position:relative;
+    width:700px;
+    left:25%;
+    top:60%;
 }
 
 .finetune{
-	position:relative;
+    position:relative;
 
-	width:100%;
-	height:50%;
-	top:5%;
+    width:100%;
+    height:50%;
+    top:5%;
 }
 
 .open{
-	position:relative;
-	width:650px;
-	left:30%;
-	top:25%;
+    position:relative;
+    width:650px;
+    left:30%;
+    top:25%;
 }
 
 .volup{
-	position:relative;
-	width:850px;
-	left:20%;
-	top:25%;
+    position:relative;
+    width:850px;
+    left:20%;
+    top:25%;
 }
 
 .pausebutt{
-	width:200px;
+    width:200px;
 
-	position:relative;
-	left:40%;
+    position:relative;
+    left:40%;
 }
 
 .volume{
-	width:250px;
+    width:250px;
 
-	position:relative;
-	left:65%;
-	top:50%;
+    position:relative;
+    left:65%;
+    top:50%;
 }
 .skiptracking{
-	position:relative;
-	width:300px;
-	left:20%;
+    position:relative;
+    width:300px;
+    left:20%;
 }
 
 .fifty{
-	height:100%;
-	top:50%;
-	width:50%;
+    height:100%;
+    top:50%;
+    width:50%;
 }
 
 .full{
-	width:100%;
-	height:100%;
+    width:100%;
+    height:100%;
 
 }
 
 .marg{
-	margin-bottom:20px;
+    margin-bottom:20px;
 }
 
 .mess{
-	width:1050px;
+    width:1050px;
 
-	position:relative;
-	left:10%;
-	top:80%;
-	transform:rotate(-10deg);
+    position:relative;
+    left:10%;
+    top:80%;
+    transform:rotate(-10deg);
 }
 
 .mess2{
-	width:1050px;
+    width:1050px;
 
-	position:absolute;
-	left:227%;
-	top:96%;
+    position:absolute;
+    left:227%;
+    top:96%;
 }
 
 .mess3{
-	width:500px;
+    width:500px;
 
-	position:absolute;
-	left:258%;
-	top:92%;
-	transform:rotate(10deg);
+    position:absolute;
+    left:258%;
+    top:92%;
+    transform:rotate(10deg);
 }
 
 .mess4{
-	width:1050px;
+    width:1050px;
 
-	position:absolute;
-	left:210%;
-	top:93%;
-	transform: rotate(-2deg);
+    position:absolute;
+    left:210%;
+    top:93%;
+    transform: rotate(-2deg);
 }
 
 .mess5{
-	width:500px;
+    width:500px;
 
-	position:absolute;
-	left:229%;
-	top:85%;
+    position:absolute;
+    left:229%;
+    top:85%;
 }
 
 .fifty{
-	width:70%;
+    width:70%;
 }
 
 .mq{display:none;}
@@ -346,15 +342,15 @@ display:block;
 .row1 , .mess7 , .mess8 , .mess9{display:none;}
 .row2{display:none;}
 .mobflex{
-	display:flex;
-	flex-direction: column;
+    display:flex;
+    flex-direction: column;
 
-	align-content: center;
-	overflow-y: auto;
+    align-content: center;
+    overflow-y: auto;
 }
 
 .momcontain{
-	display:all;
+    display:all;
 }
 
 #line3 {
@@ -424,55 +420,55 @@ display:block;
     left:50%;
  }  
 .right{
-	float:right;
+    float:right;
 }
 .mq{
-	display:block;
-	font-family: neue-haas-grotesk-display, sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	color:black;
-	font-size: 20pt;
-	line-height: 20pt;
+    display:block;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:black;
+    font-size: 20pt;
+    line-height: 20pt;
 
-	margin:20px;
-	padding:10px;
+    margin:20px;
+    padding:10px;
 
-	text-align:center;
-	background-color:transparent;
-	border:solid black 5px;
-	border-radius:25px;
+    text-align:center;
+    background-color:transparent;
+    border:solid black 5px;
+    border-radius:25px;
 }
 .nopadding{
-	padding:0px;
-	margin:0px;
+    padding:0px;
+    margin:0px;
 }
 .mess1{
-	transform:rotate(-10deg);
+    transform:rotate(-10deg);
 }
 .mess7{
 
 }
 .mess8{
-	transform:rotate(10deg);
+    transform:rotate(10deg);
 }
 .mess9{
-	transform: rotate(-2deg);
+    transform: rotate(-2deg);
 }
 }
 
 @media(max-width: 1000px){.row1 , .mess7 , .mess8 , .mess9{display:none;}
 .row2{display:none;}
 .mobflex{
-	display:flex;
-	flex-direction: column;
+    display:flex;
+    flex-direction: column;
 
-	align-content: center;
-	overflow-y: auto;
+    align-content: center;
+    overflow-y: auto;
 }
 
 .momcontain{
-	display:all;
+    display:all;
 }
 
 #line3 {
@@ -542,39 +538,39 @@ display:block;
     left:50%;
  }  
 .right{
-	float:right;
+    float:right;
 }
 .mq{
-	display:block;
-	font-family: neue-haas-grotesk-display, sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	color:black;
-	font-size: 20pt;
-	line-height: 20pt;
+    display:block;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:black;
+    font-size: 20pt;
+    line-height: 20pt;
 
-	margin:20px;
-	padding:10px;
+    margin:20px;
+    padding:10px;
 
-	text-align:center;
-	background-color:transparent;
-	border:solid black 5px;
-	border-radius:25px;
+    text-align:center;
+    background-color:transparent;
+    border:solid black 5px;
+    border-radius:25px;
 }
 .nopadding{
-	padding:0px;
-	margin:0px;
+    padding:0px;
+    margin:0px;
 }
 .mess1{
-	transform:rotate(-10deg);
+    transform:rotate(-10deg);
 }
 .mess7{
 
 }
 .mess8{
-	transform:rotate(10deg);
+    transform:rotate(10deg);
 }
 .mess9{
-	transform: rotate(-2deg);
+    transform: rotate(-2deg);
 }
 }
