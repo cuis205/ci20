@@ -1,0 +1,151 @@
+
+body {
+  font-size: 24px;
+  color: #000;
+  margin:0px;
+  width:100vw;
+  height:100vh;
+
+  background-color: #FAFAFA;
+}
+
+.headcont{ 
+	width:100%;
+ }
+
+
+a {
+  color: #000;
+  text-decoration: none;
+  text-decoration-line: underline;
+  cursor: pointer;
+
+/*font-family: jubilat, serif;
+font-weight: 400;
+font-style: normal;*/
+font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 23pt;
+line-height: 23pt;
+color:#232120 ;
+}
+
+.byline{
+font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 10px;
+
+text-transform:uppercase;
+margin-top:8px;
+}
+
+.strike{
+	text-decoration: line-through;
+}
+
+.articles, .onionab{ 
+margin:4px 0px 15px;
+font-family: gopher, sans-serif;
+font-weight: 300;
+font-style: normal;
+color:#5c5a5a;
+font-size: 12pt;
+ }
+
+#mini{
+font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 15pt;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.headline{
+	display:inline-block;
+	background-color: #E94034;
+	height:auto;
+	padding: 20px;
+
+	font-family: jubilat, serif;
+	font-weight: 700;	
+	font-style: normal;
+	color: white;
+	font-size: 30pt;
+	width:100%;
+}
+
+
+
+
+.container{
+	padding:30px;
+	display: flex;
+	flex-direction: row;
+	overflow:auto;
+	height:70%;
+}
+
+.column{
+	width: 50%;
+	padding:10px;
+
+}
+.row{
+	height:auto;
+}
+
+.ticker{
+	background-color: #002fa7;
+	display:block;
+	overflow: hidden;
+	width:auto;
+	height:30px;
+	padding:5px;
+
+
+	color:white;
+font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+	font-size: 15pt;
+}
+
+.bottom{
+	position:fixed;
+	bottom:0%;
+}
+
+.fakenew{
+			width:max-content;
+            transform: translateX(100%);
+            animation: scroll-left 1050s linear infinite;
+}
+
+@keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+.fakenew2{
+	width:max-content;
+	 transform: translateX(100%);
+     animation: scroll-right 1050s linear infinite;
+}
+
+@keyframes scroll-right {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
