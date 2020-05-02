@@ -22,7 +22,10 @@ var oneline = [
     "I don't know whats real anymore",
     "...you know what...maybe we ARE the virus",
     "Little did we know...Parasite winning best picture would be the best thing of 2020",
-    "Please don't inject yourself with bleach"
+    "Please don't inject yourself with bleach",
+    'What is going on',
+    'I Am In Crisis! Crisis!',
+    'Which episode of the Simpsons is this'
 ];
 
 function newTitle () {
