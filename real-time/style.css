@@ -19,7 +19,7 @@ body {
 
 
 a {
-  color: #002fa7;
+  color: #000;
   text-decoration: none;
   text-decoration-line: underline;
   cursor: pointer;
@@ -33,6 +33,10 @@ font-style: normal;
 font-size: 23pt;
 line-height: 23pt;
 color:#232120 ;
+}
+
+a:hover{
+	color:#002fa7;
 }
 
 .byline{
