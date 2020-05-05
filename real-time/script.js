@@ -4,6 +4,8 @@
 var array1;
 var array2;
 
+console.log("political machine go Brrr");
+
 window.onload = function() {
            var faker = "FAKE NEWS?"+" ";
            var realnew = "REAL NEWS?"+" ";
@@ -41,7 +43,9 @@ newTitle();
 
 ///jokes
 
+console.log("gordon will u marry me");
 
+console.log("haha jk unless.🥺🤢🥴");
 
 function buildPage(){
   var row;
