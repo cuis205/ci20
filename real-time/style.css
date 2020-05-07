@@ -157,3 +157,27 @@ font-style: normal;
                 transform: translateX(100%);
             }
         }
+
+
+
+ @media(hover:none){
+.container{
+	flex-direction: column;
+}
+
+.column{
+	width:100%;
+}
+ }
+
+
+ @media(max-width:900px){
+
+.container{
+	flex-direction: column;
+}
+
+.column{
+	width:100%;
+}
+ }
