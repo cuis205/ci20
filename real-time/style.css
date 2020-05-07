@@ -163,6 +163,7 @@ font-style: normal;
  @media(hover:none){
 .container{
 	flex-direction: column;
+	height:90%;
 }
 
 .column{ 
